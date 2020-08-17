@@ -1,0 +1,55 @@
+
+Given the un-reduced big-O value, calculate the reduced value.
+
+10 = O(1)
+10n = O(n)
+5n2 + 2n = O(n^2)
+3 log2n + 2 = O(log n)
+
+2. For each of the following algorithms, calculate the big-O value. Be sure to specify which value n refers to.
+
+A. Reversing a string: big-O value =O(n) n = number of characters in that string 
+reversed = ''
+for c in str:
+reversed = c + reversed	
+
+B. Printing out a matrix: big-O value =O(n^2) n = number of row/comlumns: whichever is greater
+for row_idx in matrix.length:
+   row = matrix[row_idx]
+   for col_idx in row:
+      print row[col_idx]
+      print " "
+   print "\n"
+
+C. Reversing each string in an array: big-O value = O(n) n = number of words in array
+
+Note: For this exercise, assume that each string has at most 10 characters.
+
+reversed_strings = []
+
+for str in strings:
+
+   reversed = ''
+
+   for c in str:
+      reversed = c + reversed
+
+   reversed_strings.append(reversed)
+
+3. Suppose you have an array of Customer objects, sorted in alphabetical order by last name. For each of the following tasks, determine the run 
+time in terms of big-O.
+
+Print the names of all of the customers. O(n)
+Print the names of only the customers with last name starting with “A”. O(n)
+Find all customers with last name beginning with “A”. O(n)
+Find all customers with first name beginning with “A”. O(n) 
+
+Now suppose that you have a dictionary (or hash map) of customer objects, where the keys are letters and the values are arrays storing all 
+customers with last name beginning with that letter. For example, if our dictionary is customers then customers["A"] is an array of all 
+customers with last name ending with “A”. Within each array, the customer objects are not sorted in any way.
+
+Print the names of all of the customers. O(n)
+Print the names of only the customers with last name starting with “A”. O(n)
+Find all customers with last name beginning with “A”. O(n)
+Find all customers with first name beginning with “A”. O(n)
+
